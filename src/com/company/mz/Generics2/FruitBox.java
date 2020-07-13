@@ -3,7 +3,7 @@ package com.company.mz.Generics2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FruitBox <T extends Fruit>  implements Box {
+public class FruitBox <T extends Fruit> {
 
     private int fruitQty;
     private List<T> fruitBox;
@@ -45,7 +45,7 @@ public class FruitBox <T extends Fruit>  implements Box {
             return true;
         else return false;
     }
-    //not
+
     public boolean shiftFruit(FruitBox<T> box){
         Fruit fAnother= box.fruitBox.get(0);
         Fruit fThis= this.fruitBox.get(0);

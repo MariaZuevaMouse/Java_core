@@ -69,15 +69,16 @@ public class Main {
         System.out.println("apples in the second box:" + appleBox2.getFruitQty());
         System.out.println("apples in the third box:" + appleBox3.getFruitQty());
 
-        System.out.println(appleBox.getWeight());
-        System.out.println(appleBox2.getWeight());
-        System.out.println(orangeFruitBox.getWeight());
+        System.out.println("weight of first apple box"+appleBox.getWeight());
+        System.out.println("weight of second apple box"+appleBox2.getWeight());
+        System.out.println("weight of third apple box"+appleBox3.getWeight());
+        System.out.println("weight of first orange box"+ orangeFruitBox.getWeight());
 
-        System.out.println(appleBox2.compare(appleBox3));
-        System.out.println(appleBox2.compare(orangeFruitBox));
+        System.out.println("compare second apple box with third apple box: "+ appleBox2.compare(appleBox3));
+        System.out.println("compare second apple box with orange box: "+appleBox2.compare(orangeFruitBox));
 
         boolean check = appleBox2.shiftFruit(appleBox3);
-        System.out.println(check);
+        System.out.println("replace fruits from second to third box:  "+ check);
         System.out.println("apples in the second box:" + appleBox2.getFruitQty());
         System.out.println("apples in the third box:" + appleBox3.getFruitQty());
 
@@ -89,17 +90,15 @@ public class Main {
         orangeList5.add(new Orange());
         FruitBox<Orange> orangeFruitBox2 = new FruitBox<>(orangeList5);
 
-//        boolean falseCheck = orangeFruitBox.shiftFruit(appleBox);
-
 
         // check orange replacement
         System.out.println("oranges in the first box: " + orangeFruitBox.getFruitQty());
         System.out.println("oranges in the second box: " + orangeFruitBox2.getFruitQty());
         orangeFruitBox.shiftFruit(orangeFruitBox2);
-        System.out.println("oranges in the first box: " + orangeFruitBox.getFruitQty());
-        System.out.println("oranges in the second box: " + orangeFruitBox2.getFruitQty());
+        System.out.println("oranges in the first box after replacement: " + orangeFruitBox.getFruitQty());
+        System.out.println("oranges in the second box  after replacement: " + orangeFruitBox2.getFruitQty());
         orangeFruitBox2.clearBox();
-        System.out.println("oranges in the second box: " + orangeFruitBox2.getFruitQty());
+        System.out.println("oranges in the second box after clear: " + orangeFruitBox2.getFruitQty());
 
 
 
