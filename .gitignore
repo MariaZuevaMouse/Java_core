@@ -3,6 +3,7 @@
 *.iml
 target
 *.git
+3.txt
 
 # Compiled class file
 *.class
