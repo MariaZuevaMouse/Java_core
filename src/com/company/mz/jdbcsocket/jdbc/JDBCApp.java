@@ -25,7 +25,7 @@ public class JDBCApp {
             }
             insertNewUserStatement.executeBatch();
             connection.commit();
-//            populateDbWithUsers();
+            populateDbWithUsers();
 
             System.out.println(System.currentTimeMillis()-time);
             readDataFromDb();

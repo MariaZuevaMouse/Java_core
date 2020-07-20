@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ClientApp {
     public static void main(String[] args) {
         try(Scanner scanner = new Scanner(System.in);
-            Socket socket = new Socket("127.0.0.1", 7777)) {
+            Socket socket = new Socket("127.0.0.1", 7778)) {
             DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
             DataInputStream inputStream = new DataInputStream(socket.getInputStream());
             while(true){

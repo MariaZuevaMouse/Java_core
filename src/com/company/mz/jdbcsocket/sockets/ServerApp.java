@@ -11,7 +11,7 @@ import java.time.ZoneId;
 public class ServerApp {
     public static void main(String[] args) {
         while (true){
-            try(ServerSocket serverSocket = new ServerSocket(7777)){
+            try(ServerSocket serverSocket = new ServerSocket(7778)){
                 Socket client = serverSocket.accept();
                 System.out.println("Client connected.");
                 DataInputStream in = new DataInputStream(client.getInputStream());
