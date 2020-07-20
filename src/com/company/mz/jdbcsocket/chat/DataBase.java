@@ -47,7 +47,7 @@ public class DataBase {
             }
         }else{
             try {
-                preparedAddRowToDb.setString(1,"server");
+                preparedAddRowToDb.setString(1,"client");
                 preparedAddRowToDb.setString(2, message);
                 preparedAddRowToDb.setDate(3, Date.valueOf(LocalDate.now()));
                 preparedAddRowToDb.execute();
