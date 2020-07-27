@@ -1,11 +1,5 @@
 package com.company.mz.thread;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class ThreadTask10 {
     static final int SIZE = 10000000;
     static final int HALF = SIZE/2;
