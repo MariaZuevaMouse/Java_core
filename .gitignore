@@ -3,6 +3,10 @@
 *.iml
 target
 *.git
+3.txt
+*.html
+jdbc_app.db
+*META-INF*
 
 # Compiled class file
 *.class
